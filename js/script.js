@@ -6,30 +6,30 @@
 
 var parolaUtente = prompt("Scrivi una parola");
 
-// 2) Creo un funzione e ci inserisco l'argomento
+// 2) Creo una funzione
 
 palindroma(parolaUtente);
 
-function palindroma (parola){
+function palindroma (parola) {
 
- // 3) Creo una varibile vuota per leggere la parola all'inverso
+ // 3) Creo una varibile locale
 
  var inverso = "";
 
- // 4) Creo un ciclo for per leggere la parola inserita dall'utente al contrario
+ // 4) Creo un ciclo for per leggere la parola inserita dall'utente all'inverso
 
  for (i = parola.length - 1; i >= 0; i--) {
 
    inverso += parola[i];
  }
 
- // 5) Impongo la prima condizione: stampare "Parola palindroma" in caso la parola si potesse leggere anche al contrario
+ // 5) Impongo la prima condizione: stampare "Parola palindroma" in caso la parola si potesse leggere anche all'inverso
 
  if (inverso == parola) {
     document.getElementById("text").innerHTML = "Parola palindroma";
  }
 
- // 6) Impongo la seconda condizione: stampare "Parola non palindroma" in caso la parola non si potesse leggere anche al contrario
+ // 6) Impongo la seconda condizione: stampare "Parola non palindroma" in caso la parola non si potesse leggere anche all'inverso
 
  else {
     document.getElementById("text").innerHTML = "Parola non palindroma";
